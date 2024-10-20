@@ -128,9 +128,15 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="GameCoding.cpp" />
+    <ClCompile Include="Helper.cpp" />
+    <ClCompile Include="Map.cpp" />
+    <ClCompile Include="Player.cpp" />
     <ClCompile Include="TextRPG.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Helper.h" />
+    <ClInclude Include="Map.h" />
+    <ClInclude Include="Player.h" />
     <ClInclude Include="TextRPG.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

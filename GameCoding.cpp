@@ -1,17 +1,32 @@
 ﻿// GameCoding.cpp : 이 파일에는 'main' 함수가 포함됩니다. 거기서 프로그램 실행이 시작되고 종료됩니다.
-// 2024-10-20 TextRPG 
+// 2024-10-20 파일 분리 
 
 #include <iostream>
-#include "TextRPG.h"
+#include <windows.h>
+#include "Helper.h"
+#include "Map.h"
+#include "Player.h"
 using namespace std;
+
+
 
 
 
 
 int main()
 {
+	SetCursorOnOff(false);
 	
-	EnterLobby();
+	MovePlayer(3, 2);
+	while (true) {
+
+		//입력
+		HandleKeyInput();
+		//로직
+		HandleMove();
+		//출력
+		PrintMap1D();
+	}
 
 }
 

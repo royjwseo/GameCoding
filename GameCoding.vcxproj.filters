@@ -5,13 +5,17 @@
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
-    <Filter Include="헤더 파일">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    <Filter Include="TextRPG">
+      <UniqueIdentifier>{9107c509-1ca0-47e9-9195-bd18d676821a}</UniqueIdentifier>
     </Filter>
-    <Filter Include="리소스 파일">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    <Filter Include="Helper">
+      <UniqueIdentifier>{0ce030e7-6d12-4711-9d59-b9358a6140e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Map">
+      <UniqueIdentifier>{219dc49e-d253-4236-bb42-7dd4769f9ac2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Player">
+      <UniqueIdentifier>{5a53b6a3-deeb-4bf6-a521-7ceeb6823b63}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -19,12 +23,30 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="TextRPG.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>TextRPG</Filter>
+    </ClCompile>
+    <ClCompile Include="Helper.cpp">
+      <Filter>Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="Map.cpp">
+      <Filter>Map</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Player</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="TextRPG.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>TextRPG</Filter>
+    </ClInclude>
+    <ClInclude Include="Helper.h">
+      <Filter>Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="Map.h">
+      <Filter>Map</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Player</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
