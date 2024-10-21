@@ -10,7 +10,17 @@ enum MoveDir {
 	MD_DOWN,
 };
 
+enum ID {
+	ID_NONE,
+	ID_PLAYER,
+	ID_MARINE,
+	ID_BULLET,
+	ID_MARINEBULLET,
+	ID_WALL,
+};
+
 extern MoveDir GMoveDir;
+
 
 void HandleKeyInput();
 void SetCursorPosition(int x, int y);

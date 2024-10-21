@@ -23,6 +23,8 @@ void HandleKeyInput() {
 	else {
 		GMoveDir = MD_NONE;
 	}
+
+	
 }
 
 void SetCursorPosition(int x, int y) {

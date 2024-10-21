@@ -6,27 +6,42 @@
 #include "Helper.h"
 #include "Map.h"
 #include "Player.h"
+#include "Marine.h"
 using namespace std;
 
-
+#include <array>
 
 
 
 
 int main()
 {
+	srand(time(NULL));
 	SetCursorOnOff(false);
 	
-	MovePlayer(3, 2);
+	Player::GetInstance()->MovePlayer(5, 5);
 	while (true) {
 
 		//입력
 		HandleKeyInput();
 		//로직
-		HandleMove();
+		Marine::GetInstance()->HandleMove();
+		Player::GetInstance()->HandleMove();
+	
+	
 		//출력
-		PrintMap1D();
+		Map::GetInstance()->PrintMap();
+		if (Map::GetInstance()->GetIfGameOver()) {
+			cout << "=========게임 종료===========\n";
+			break;
+		}
 	}
-
+	while (1) {
+		cout << "아무거나 입력하시오";
+		int a;
+		cin >> a;
+		break;
+	}
+	
 }
 
